@@ -1,0 +1,475 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Project Title</title>
+<meta charset="utf-8">
+<meta name="viewport" content="target-densitydpi=device-dpi, width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, minimal-ui" />
+<style> @-ms-viewport { width: device-width; } </style>
+<link rel="stylesheet" href="vendor/reset.min.css">
+<link rel="stylesheet" href="style.css">
+</head>
+<body class="multiple-scenes view-control-buttons">
+
+<div id="pano"></div>
+
+<div id="sceneList">
+  <ul class="scenes">
+    
+      <a href="javascript:void(0)" class="scene" data-id="0--">
+        <li class="text">Первый ракурс</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="1--">
+        <li class="text">Второй ракурс</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="2--">
+        <li class="text">Третий ракурс</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="3--">
+        <li class="text">Четвертый ракурс</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="4--">
+        <li class="text">Пятый ракурс</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="5----">
+        <li class="text">Вид с птичьего полёта</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="6--">
+        <li class="text">Вход </li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="7--">
+        <li class="text">Главный вход</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="8-">
+        <li class="text">Гостиница</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="9--">
+        <li class="text">Терасса бассейн(Ж)</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="10--">
+        <li class="text">Терасса бассейн(М)</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="11--">
+        <li class="text">Терасса ресторан</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="12---">
+        <li class="text"> Терасса бассейн</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="13--">
+        <li class="text">Терасса бассейн</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="14-1--1">
+        <li class="text">1-этаж 1</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="15-1--2">
+        <li class="text">1-этаж 2</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="16-1--3">
+        <li class="text">1-этаж 3</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="17-1--4">
+        <li class="text">1-этаж 4</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="18-1--5">
+        <li class="text">1-этаж 5</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="19-1--6">
+        <li class="text">1-этаж 6</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="20-1--7">
+        <li class="text">1-этаж 7</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="21-1--8">
+        <li class="text">1-этаж 8</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="22-1--9">
+        <li class="text">1-этаж 9</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="23-1--10">
+        <li class="text">1-этаж 10</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="24-2--1">
+        <li class="text">2-этаж 1</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="25-2--2">
+        <li class="text">2-этаж 2</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="26-2--3">
+        <li class="text">2-этаж 3</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="27-2--4">
+        <li class="text">2-этаж 4</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="28-2--5">
+        <li class="text">2-этаж 5</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="29-2--6">
+        <li class="text">2-этаж 6</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="30-2--7">
+        <li class="text">2-этаж 7</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="31-2--8">
+        <li class="text">2-этаж 8</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="32-3--1">
+        <li class="text">3-этаж 1</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="33-3--2">
+        <li class="text">3-этаж 2</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="34-3--3">
+        <li class="text">3-этаж 3</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="35-3--4">
+        <li class="text">3-этаж 4</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="36-3--5">
+        <li class="text">3-этаж 5</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="37-3--6">
+        <li class="text">3-этаж 6</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="38-3--7">
+        <li class="text">3-этаж 7</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="39-3--8">
+        <li class="text">3-этаж 8</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="40-4--1">
+        <li class="text">4-этаж 1</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="41-4--2">
+        <li class="text">4-этаж 2</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="42--1">
+        <li class="text">Детский 1</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="43--2">
+        <li class="text">Детский 2</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="44--3">
+        <li class="text">Детский 3</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="45--4">
+        <li class="text">Детский 4</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="46--5">
+        <li class="text">Детский 5</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="47--1">
+        <li class="text">Фудкорт 1</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="48--2">
+        <li class="text">Фудкорт 2</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="49--3">
+        <li class="text">Фудкорт 3</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="50--4">
+        <li class="text">Фудкорт 4</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="51-5--1">
+        <li class="text">5-этаж 1</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="52-5--2">
+        <li class="text">5-этаж 2</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="53-5--3">
+        <li class="text">5-этаж 3</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="54-5--4">
+        <li class="text">5-этаж 4</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="55-5--5">
+        <li class="text">5-этаж 5</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="56-5--6">
+        <li class="text">5-этаж 6</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="57-5--7">
+        <li class="text">5-этаж 7</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="58-5--8">
+        <li class="text">5-этаж 8</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="59--1">
+        <li class="text">Офис 1</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="60--2">
+        <li class="text">Офис 2</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="61--3">
+        <li class="text">Офис 3</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="62---">
+        <li class="text">Лифт Спа </li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="63-">
+        <li class="text">Раздевалка</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="64--2">
+        <li class="text">Помывальная 2</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="65--1">
+        <li class="text">Помывальная 1</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="66--3">
+        <li class="text">Помывальная 3</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="67-">
+        <li class="text">Парилка</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="68-">
+        <li class="text">Холл</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="69--2">
+        <li class="text">Коридор 2</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="70--1">
+        <li class="text">Коридор 1</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="71--3">
+        <li class="text">Коридор 3</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="72-">
+        <li class="text">Холл</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="73--">
+        <li class="text">Крио сауна</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="74--">
+        <li class="text">Скип ванна</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="75--">
+        <li class="text">Солевая комната</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="76-6--1">
+        <li class="text">6-этаж 1</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="77-6--2">
+        <li class="text">6-этаж 2</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="78--1">
+        <li class="text">Фитнес(Ж) 1</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="79--2">
+        <li class="text">Фитнес(Ж) 2</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="80--3">
+        <li class="text">Фитнес(Ж) 3</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="81--4">
+        <li class="text">Фитнес(Ж) 4</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="82--1">
+        <li class="text">Фитнес(М) 1</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="83--2">
+        <li class="text">Фитнес(М) 2</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="84--3">
+        <li class="text">Фитнес(М) 3</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="85--4">
+        <li class="text">Фитнес(М) 4</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="86-">
+        <li class="text">Массаж</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="87-">
+        <li class="text">Пилинг</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="88--1--1">
+        <li class="text">-1-этаж 1</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="89--1--2">
+        <li class="text">-1-этаж 2</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="90--1--3">
+        <li class="text">-1-этаж 3</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="91--1">
+        <li class="text">Супермаркет 1</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="92--2">
+        <li class="text">Супермаркет 2</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="93--1">
+        <li class="text">Электроника 1</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="94--2">
+        <li class="text">Электроника 2</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="95--1--4">
+        <li class="text">-1-этаж 4</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="96-">
+        <li class="text">Аптека</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="97-">
+        <li class="text">Аксессуары</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="98--2">
+        <li class="text">Паркинг 2</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="99--1">
+        <li class="text">Паркинг 1</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="100--3">
+        <li class="text">Паркинг 3</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="101--4">
+        <li class="text">Паркинг 4</li>
+      </a>
+    
+  </ul>
+</div>
+
+<div id="titleBar">
+  <h1 class="sceneName"></h1>
+</div>
+
+<a href="javascript:void(0)" id="autorotateToggle">
+  <img class="icon off" src="img/play.png">
+  <img class="icon on" src="img/pause.png">
+</a>
+
+<a href="javascript:void(0)" id="fullscreenToggle">
+  <img class="icon off" src="img/fullscreen.png">
+  <img class="icon on" src="img/windowed.png">
+</a>
+
+<a href="javascript:void(0)" id="sceneListToggle">
+  <img class="icon off" src="img/expand.png">
+  <img class="icon on" src="img/collapse.png">
+</a>
+
+<a href="javascript:void(0)" id="viewUp" class="viewControlButton viewControlButton-1">
+  <img class="icon" src="img/up.png">
+</a>
+<a href="javascript:void(0)" id="viewDown" class="viewControlButton viewControlButton-2">
+  <img class="icon" src="img/down.png">
+</a>
+<a href="javascript:void(0)" id="viewLeft" class="viewControlButton viewControlButton-3">
+  <img class="icon" src="img/left.png">
+</a>
+<a href="javascript:void(0)" id="viewRight" class="viewControlButton viewControlButton-4">
+  <img class="icon" src="img/right.png">
+</a>
+<a href="javascript:void(0)" id="viewIn" class="viewControlButton viewControlButton-5">
+  <img class="icon" src="img/plus.png">
+</a>
+<a href="javascript:void(0)" id="viewOut" class="viewControlButton viewControlButton-6">
+  <img class="icon" src="img/minus.png">
+</a>
+
+<script src="vendor/screenfull.min.js" ></script>
+<script src="vendor/bowser.min.js" ></script>
+<script src="vendor/marzipano.js" ></script>
+
+<script src="data.js"></script>
+<script src="index.js"></script>
+
+</body>
+</html>
